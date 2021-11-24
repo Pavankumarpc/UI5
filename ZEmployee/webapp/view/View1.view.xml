@@ -1,0 +1,38 @@
+<mvc:View controllerName="NetZEmployee.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<f:SimpleForm id="Form" editable="true" layout="ResponsiveGridLayout" title="Details" width="70%">
+						<f:content>
+							<!--First Name-->
+							<Label text="First Name "/>
+							<Input required="true" id="inputFname" placeholder="Enter FirstName" class="inputF" maxLength="12"/>
+							<!--Middle Name-->
+							<Label text="Middle Name "/>
+							<Input id="inputMname" placeholder="Enter MiddleName" class="inputM" maxLength="12"/>
+							<!--Last Name-->
+							<Label text="LastName" labelFor="inputLName"/>
+							<Input required="true" id="inputLname" placeholder="Enter LastName" class="inputL" maxLength="12"/>
+							<!--E-mail-->
+							<Label required="true" text="Email" labelFor="inputEmail"/>
+							<Input id="input_Email" type="Email" placeholder="Enter E-mail" class="inputEmail" maxLength="25"/>
+							<!--Mobile Number-->
+							<Label required="true" text="Mobile Number" labelFor="inputMob"/>
+							<Input id="input_Mob" type= "Number" placeholder="Enter Mobile Number" class="inputMob" maxLength="10"/>
+							<!--Address-->
+							<Label text="Address" labelFor="inputAddr"/>
+							<Input id="input_Addr" type="Text" placeholder="Enter Address" class="inputAddr" maxLength="50"/>
+							<!--Accept Button-->
+							<Label text=" "/>
+							<Button width="200px" type="Accept" text="Submit" press="onSubmit" icon="sap-icon://accept" class="button1"></Button>
+							<!--Reset Button-->
+							<Button width="200px" type="Reject" text="Reset" press="onSubmit1" icon="sap-icon://undo" class="button2"></Button>
+						</f:content>
+					</f:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
